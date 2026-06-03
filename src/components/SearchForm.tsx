@@ -138,13 +138,13 @@ export default function SearchForm({ onSearch }: Props) {
         background: '#fff',
         border: '1px solid var(--color-border)',
         borderRadius: 24,
-        padding: '28px 28px 24px',
+        padding: 'clamp(12px, 4vw, 28px) clamp(12px, 4vw, 28px) 24px',
         maxWidth: 660,
         margin: '0 auto',
       }}
     >
       {/* Fila 1: Presupuesto + Moneda */}
-      <div className="flex gap-3 mb-4">
+      <div className="flex flex-col sm:flex-row gap-3 mb-4">
         <div style={{ flex: 2 }}>
           <label style={labelStyle}>Presupuesto total *</label>
           <div style={{ position: 'relative' }}>
@@ -178,7 +178,7 @@ export default function SearchForm({ onSearch }: Props) {
       </div>
 
       {/* Fila 2: Fechas */}
-      <div className="flex gap-3 mb-4">
+      <div className="flex flex-col sm:flex-row gap-3 mb-4">
         <div style={{ flex: 1 }}>
           <label style={labelStyle}>Fecha de salida *</label>
           <input
@@ -228,7 +228,7 @@ export default function SearchForm({ onSearch }: Props) {
       </div>
 
       {/* Fila 3: Aeropuerto + Destino */}
-      <div className="flex gap-3 mb-5">
+      <div className="flex flex-col sm:flex-row gap-3 mb-5">
         <div style={{ flex: 1 }}>
           <label style={labelStyle}>Aeropuerto de salida *</label>
           <input

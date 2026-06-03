@@ -42,7 +42,7 @@ export default function Home() {
             className="mb-6"
             style={{
               fontFamily: 'var(--font-display)',
-              fontSize: 'clamp(2.4rem, 5vw, 4rem)',
+              fontSize: 'clamp(1rem, 6vw, 4rem)',
               color: 'var(--color-ink)',
               lineHeight: 1.1,
               letterSpacing: '-0.02em',
