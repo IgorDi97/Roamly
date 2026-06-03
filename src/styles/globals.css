@@ -115,3 +115,11 @@ h1, h2, h3 {
 .dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: currentColor; animation: bounce 1.2s ease-in-out infinite; }
 .dot:nth-child(2) { animation-delay: 0.2s; }
 .dot:nth-child(3) { animation-delay: 0.4s; }
+
+
+/* === Mobile fix === */
+html, body {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+* { box-sizing: border-box; }
